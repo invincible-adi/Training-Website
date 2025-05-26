@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | SkillPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gallery-hero {
+            background: url('https://themes.potenzaglobalsolutions.com/html/guruma/images/bg/03.jpg') center/cover no-repeat;
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+        }
+
+        .gallery-img {
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .modal-img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .filter-btn.active,
+        .filter-btn:focus {
+            background: #0d6efd;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="../components/navbar.html" -->
+    <!-- Hero Section -->
+    <section class="gallery-hero text-white text-center">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Gallery</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="/index.html" class="text-white-50">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Gallery</li>
+                </ol>
+            </nav>
+            <p class="lead mt-3">Explore moments from our events, classes, and student achievements</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter Buttons -->
+    <div class="container py-4">
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-primary filter-btn active mx-1" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="events">Events</button>
+            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="classes">Classes</button>
+            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="students">Students</button>
+        </div>
+        <div class="row g-4" id="galleryGrid">
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/01.jpg"
+                        class="gallery-img w-100" alt="Event 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/01.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/02.jpg"
+                        class="gallery-img w-100" alt="Class 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/02.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="students">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/03.jpg"
+                        class="gallery-img w-100" alt="Student 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/03.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/04.jpg"
+                        class="gallery-img w-100" alt="Event 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/04.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/05.jpg"
+                        class="gallery-img w-100" alt="Class 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/05.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="students">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/06.jpg"
+                        class="gallery-img w-100" alt="Student 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/06.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Lightbox -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <img src="" id="modalImage" class="modal-img" alt="Gallery Large">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- ...existing code... -->
+
+    <!-- Back to Top Button and scripts -->
+    <!-- ...existing code... -->
+    <script src="/assests/js/main.js"></script>
+</body>
+
+</html>

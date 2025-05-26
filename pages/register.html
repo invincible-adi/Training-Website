@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - EduTech Institute</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assests/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="navbar">
+        <div class="container">
+            <a class="navbar-brand animate-fadeInLeft" href="/index.html">
+                <i class="fas fa-graduation-cap me-2"></i>
+                EduTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training.html">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary-custom active" href="register.html">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="animate-fadeInUp">
+                        <h1 class="display-4 fw-bold text-white mb-4 font-playfair">
+                            Start Your Learning <span class="text-warning">Journey</span>
+                        </h1>
+                        <p class="lead text-white mb-5">
+                            Join thousands of successful students who have transformed their careers
+                            with our comprehensive training programs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-hover shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-5">
+                                <h2 class="h3 fw-bold mb-3">Course Registration</h2>
+                                <p class="text-muted">Fill out the form below to register for your chosen course</p>
+                            </div>
+
+                            <form>
+                                <div class="row g-3">
+                                    <!-- Personal Information -->
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label fw-bold">
+                                            First Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label fw-bold">
+                                            Last Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-bold">
+                                            Email Address <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label fw-bold">
+                                            Phone Number <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    </div>
+
+                                    <!-- Course Selection -->
+                                    <div class="col-12">
+                                        <label for="course" class="form-label fw-bold">
+                                            Select Course <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select" id="course" name="course" required>
+                                            <option value="">Choose a course...</option>
+                                            <option value="web-development">Full Stack Web Development</option>
+                                            <option value="data-science">Data Science & Machine Learning</option>
+                                            <option value="digital-marketing">Digital Marketing Mastery</option>
+                                            <option value="ui-ux-design">UI/UX Design Professional</option>
+                                            <option value="mobile-development">Mobile App Development</option>
+                                            <option value="business-analytics">Business Analytics & Intelligence
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Experience Level -->
+                                    <div class="col-12">
+                                        <label for="experience" class="form-label fw-bold">
+                                            Current Experience Level <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select" id="experience" name="experience" required>
+                                            <option value="">Select your level...</option>
+                                            <option value="beginner">Beginner - No prior experience</option>
+                                            <option value="some-experience">Some Experience - Basic knowledge</option>
+                                            <option value="intermediate">Intermediate - 1-3 years experience</option>
+                                            <option value="advanced">Advanced - 3+ years experience</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Motivation -->
+                                    <div class="col-12">
+                                        <label for="motivation" class="form-label fw-bold">
+                                            Why do you want to take this course?
+                                        </label>
+                                        <textarea class="form-control" id="motivation" name="motivation" rows="4"
+                                            placeholder="Tell us about your goals and what you hope to achieve..."></textarea>
+                                    </div>
+
+                                    <!-- Terms and Conditions -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="agreeTerms"
+                                                name="agreeTerms" required>
+                                            <label class="form-check-label" for="agreeTerms">
+                                                I agree to the{' '}
+                                                <a href="#" class="text-primary text-decoration-none">Terms and
+                                                    Conditions</a>{' '}
+                                                and{' '}
+                                                <a href="#" class="text-primary text-decoration-none">Privacy Policy</a>
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-primary-custom btn-lg px-5">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Submit Registration
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="text-center mt-4">
+                                <p class="text-muted small">
+                                    Already have an account?{' '}
+                                    <a href="#" class="text-primary text-decoration-none">Sign in here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="col-lg-4">
+                    <div class="card bg-light">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-4">
+                                <i class="fas fa-info-circle text-primary me-2"></i>
+                                What Happens Next?
+                            </h5>
+
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; font-size: 0.8rem;">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="fw-bold mb-1">Application Review</h6>
+                                    <p class="small text-muted mb-0">
+                                        Our team will review your application within 24 hours.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; font-size: 0.8rem;">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="fw-bold mb-1">Personal Consultation</h6>
+                                    <p class="small text-muted mb-0">
+                                        Schedule a call with our education advisor to discuss your goals.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; font-size: 0.8rem;">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="fw-bold mb-1">Enrollment Confirmation</h6>
+                                    <p class="small text-muted mb-0">
+                                        Complete payment and receive access to your course materials.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; font-size: 0.8rem;">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="fw-bold mb-1">Start Learning</h6>
+                                    <p class="small text-muted mb-0">
+                                        Begin your transformative learning journey with expert guidance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-body text-center p-4">
+                            <h6 class="fw-bold mb-3">Need Help?</h6>
+                            <p class="small text-muted mb-3">
+                                Our admissions team is here to assist you with any questions.
+                            </p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-phone me-2"></i>
+                                Contact Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row section-padding">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="animate-fadeInUp">
+                        <h3 class="font-playfair mb-4">
+                            <i class="fas fa-graduation-cap me-2 text-secondary-custom"></i>
+                            EduTech Institute
+                        </h3>
+                        <p class="mb-4">
+                            Empowering minds, shaping futures. We provide world-class education and training
+                            to help you achieve your professional goals and unlock your potential.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-facebook-f fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-twitter fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-linkedin-in fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-instagram fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.1s">
+                        <h5 class="mb-4 text-secondary-custom">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="/index.html" class="text-decoration-none">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="about.html" class="text-decoration-none">About Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="courses.html" class="text-decoration-none">Courses</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="training.html" class="text-decoration-none">Training</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="contact.html" class="text-decoration-none">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.2s">
+                        <h5 class="mb-4 text-secondary-custom">Popular Courses</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=web-development" class="text-decoration-none">Web
+                                    Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=data-science" class="text-decoration-none">Data
+                                    Science</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=digital-marketing"
+                                    class="text-decoration-none">Digital Marketing</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=mobile-development"
+                                    class="text-decoration-none">Mobile Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=ui-ux-design" class="text-decoration-none">UI/UX
+                                    Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.3s">
+                        <h5 class="mb-4 text-secondary-custom">Contact Info</h5>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt me-3 text-secondary-custom"></i>
+                            <span>123 Education Street, Learning City, LC 12345</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone me-3 text-secondary-custom"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope me-3 text-secondary-custom"></i>
+                            <span>info@edutech.com</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-clock me-3 text-secondary-custom"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: #4a5568;">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-center text-md-start">
+                        © 2024 EduTech Institute. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none me-3">Terms of Service</a>
+                        <a href="#" class="text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assests/js/main.js"></script>
+</body>
+
+</html>

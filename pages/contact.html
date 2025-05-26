@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduTech Institute</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assests/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="navbar">
+        <div class="container">
+            <a class="navbar-brand animate-fadeInLeft" href="/index.html">
+                <i class="fas fa-graduation-cap me-2"></i>
+                EduTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training.html">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary-custom" href="register.html">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="animate-fadeInUp">
+                        <h1 class="display-4 fw-bold text-white mb-4 font-playfair">
+                            Get in <span class="text-warning">Touch</span>
+                        </h1>
+                        <p class="lead text-white mb-5">
+                            Have questions about our courses or need guidance on your learning journey?
+                            We're here to help you every step of the way.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center animate-fadeInUp">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Our Location</h5>
+                        <p class="text-muted mb-1">123 Education Street</p>
+                        <p class="text-muted mb-1">Learning City, LC 12345</p>
+                        <p class="text-muted">United States</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.1s">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Phone Numbers</h5>
+                        <p class="text-muted mb-1">+1 (555) 123-4567</p>
+                        <p class="text-muted mb-1">+1 (555) 987-6543</p>
+                        <p class="text-muted">Toll-free: 1-800-EDUTECH</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Email Addresses</h5>
+                        <p class="text-muted mb-1">info@edutech.com</p>
+                        <p class="text-muted mb-1">admissions@edutech.com</p>
+                        <p class="text-muted">support@edutech.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.3s">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Office Hours</h5>
+                        <p class="text-muted mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p class="text-muted mb-1">Saturday: 10:00 AM - 4:00 PM</p>
+                        <p class="text-muted">Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card card-hover shadow">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Send us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fw-bold">
+                                            Full Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-bold">
+                                            Email Address <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label fw-bold">
+                                            Phone Number
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label fw-bold">
+                                            Subject <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="">Select a subject...</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="admissions">Admissions</option>
+                                            <option value="courses">Course Information</option>
+                                            <option value="corporate">Corporate Training</option>
+                                            <option value="technical">Technical Support</option>
+                                            <option value="billing">Billing & Payment</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-bold">
+                                            Message <span class="text-danger">*</span>
+                                        </label>
+                                        <textarea class="form-control" id="message" name="message" rows="6"
+                                            placeholder="Please describe how we can help you..." required></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary-custom btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map & Additional Info -->
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2618518430974!2d-74.00369068459396!3d40.74844197932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635180000000!5m2!1sen!2sus"
+                                    width="100%" height="300" style="border: 0;" allowfullscreen loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" title="EduTech Institute Location">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-4">
+                                <i class="fas fa-calendar-alt text-primary me-2"></i>
+                                Schedule a Consultation
+                            </h5>
+                            <p class="text-muted mb-4">
+                                Want to discuss your learning goals with one of our education advisors?
+                                Schedule a free consultation call.
+                            </p>
+                            <div class="d-grid">
+                                <button class="btn btn-outline-primary">
+                                    <i class="fas fa-video me-2"></i>
+                                    Book Free Consultation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-3 font-playfair animate-fadeInUp">
+                            Frequently Asked <span class="text-primary-custom">Questions</span>
+                        </h2>
+                        <p class="lead text-muted animate-fadeInUp">
+                            Quick answers to common questions
+                        </p>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 animate-fadeInUp">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq0">
+                                    How do I enroll in a course?
+                                </button>
+                            </h2>
+                            <div id="faq0" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    You can enroll by clicking the "Register Now" button on any course page,
+                                    or by filling out our contact form and we'll guide you through the process.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 animate-fadeInUp" style="animation-delay: 0.1s">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do you offer payment plans?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes, we offer flexible payment plans for all our courses. Contact our admissions
+                                    team to discuss options that work for your budget.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 animate-fadeInUp" style="animation-delay: 0.2s">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Are your courses accredited?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes, our courses are accredited by leading industry organizations and provide
+                                    certificates recognized by employers worldwide.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 animate-fadeInUp" style="animation-delay: 0.3s">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I study part-time?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Absolutely! We offer flexible scheduling options including part-time,
+                                    evening, and weekend classes to accommodate working professionals.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <p class="text-muted">
+                            Can't find what you're looking for?{' '}
+                            <a href="#" class="text-primary text-decoration-none fw-bold">
+                                Contact our support team
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row section-padding">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="animate-fadeInUp">
+                        <h3 class="font-playfair mb-4">
+                            <i class="fas fa-graduation-cap me-2 text-secondary-custom"></i>
+                            EduTech Institute
+                        </h3>
+                        <p class="mb-4">
+                            Empowering minds, shaping futures. We provide world-class education and training
+                            to help you achieve your professional goals and unlock your potential.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-facebook-f fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-twitter fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-linkedin-in fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-instagram fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.1s">
+                        <h5 class="mb-4 text-secondary-custom">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="/index.html" class="text-decoration-none">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="about.html" class="text-decoration-none">About Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="courses.html" class="text-decoration-none">Courses</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="training.html" class="text-decoration-none">Training</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="contact.html" class="text-decoration-none">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.2s">
+                        <h5 class="mb-4 text-secondary-custom">Popular Courses</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=web-development" class="text-decoration-none">Web
+                                    Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=data-science" class="text-decoration-none">Data
+                                    Science</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=digital-marketing"
+                                    class="text-decoration-none">Digital Marketing</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=mobile-development"
+                                    class="text-decoration-none">Mobile Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=ui-ux-design" class="text-decoration-none">UI/UX
+                                    Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.3s">
+                        <h5 class="mb-4 text-secondary-custom">Contact Info</h5>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt me-3 text-secondary-custom"></i>
+                            <span>123 Education Street, Learning City, LC 12345</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone me-3 text-secondary-custom"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope me-3 text-secondary-custom"></i>
+                            <span>info@edutech.com</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-clock me-3 text-secondary-custom"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: #4a5568;">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-center text-md-start">
+                        © 2024 EduTech Institute. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none me-3">Terms of Service</a>
+                        <a href="#" class="text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assests/js/main.js"></script>
+</body>
+
+</html>
