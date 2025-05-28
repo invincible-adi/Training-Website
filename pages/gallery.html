@@ -42,14 +42,49 @@
 </head>
 
 <body>
-    <!--#include virtual="../components/navbar.html" -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="navbar">
+        <div class="container">
+            <a class="navbar-brand animate-fadeInLeft" href="/">
+                <i class="fas fa-graduation-cap me-2"></i>
+                EduTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/training.html">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary-custom" href="/pages/register.html">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section -->
     <section class="gallery-hero text-white text-center">
         <div class="container py-5">
             <h1 class="display-4 fw-bold">Gallery</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="/index.html" class="text-white-50">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/" class="text-white-50">Home</a></li>
                     <li class="breadcrumb-item active text-white" aria-current="page">Gallery</li>
                 </ol>
             </nav>
@@ -125,7 +160,7 @@
 
     <!-- Back to Top Button and scripts -->
     <!-- ...existing code... -->
-    <script src="/assests/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

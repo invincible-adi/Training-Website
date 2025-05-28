@@ -1,10 +1,9 @@
-
 // Main JavaScript functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('navbar-scrolled');
         } else {
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Active navigation link
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href === currentPage || (currentPage === '' && href === 'index.html')) {
@@ -102,23 +101,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation and submission
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
-            
+
             // Show loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="loading-spinner me-2"></span>Processing...';
-            
+
             // Simulate form submission
             setTimeout(() => {
                 alert('Form submitted successfully! We will get back to you soon.');
-                
+
                 // Reset form
                 form.reset();
-                
+
                 // Reset button
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalText;
@@ -269,25 +268,10 @@ function showToast(message, type = 'success') {
     toast.className = `alert alert-${type} position-fixed top-0 end-0 m-3`;
     toast.style.zIndex = '9999';
     toast.textContent = message;
-    
+
     document.body.appendChild(toast);
-    
+
     setTimeout(() => {
         toast.remove();
     }, 3000);
 }
-
-// Mobile menu toggle
-function toggleMobileMenu() {
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-    if (navbarToggler && navbarCollapse) {
-        navbarToggler.addEventListener('click', function() {
-            navbarCollapse.classList.toggle('show');
-        });
-    }
-}
-
-// Initialize mobile menu
-toggleMobileMenu();

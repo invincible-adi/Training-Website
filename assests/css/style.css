@@ -85,7 +85,8 @@ body {
 
 .navbar-scrolled {
     background: rgba(30, 41, 59, 0.98);
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
+    /* height: 100px !important; */
 }
 
 .navbar-brand {
@@ -113,7 +114,13 @@ body {
 
 .navbar-toggler {
     border: none;
-    color: white;
+    color: white !important;
+    /* Fallback for browsers that don't support filter */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    /* Make Bootstrap toggler icon white */
 }
 
 .navbar-toggler:focus {
@@ -123,7 +130,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, var(--dark-color) 0%, #334155 100%);
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -269,11 +276,11 @@ body {
 
     0%,
     100% {
-        transform: translateY(0px);
+        transform: translateY(20px);
     }
 
     50% {
-        transform: translateY(-20px);
+        transform: translateY(0px);
     }
 }
 
@@ -342,7 +349,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 80vh;
+        min-height: 110vh;
         padding: 50px 0;
     }
 
