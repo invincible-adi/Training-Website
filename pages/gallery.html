@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | SkillPro</title>
+    <title>Softech IT Solution - Gallery</title>
+    <meta name="description" content="View the gallery of Softech IT Solution.">
+    <meta name="author" content="Softech IT Solution">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .gallery-hero {
-            background: url('https://themes.potenzaglobalsolutions.com/html/guruma/images/bg/03.jpg') center/cover no-repeat;
+            background: url('https://images.unsplash.com/photo-1517038404585-adc945f3858c?w=1000&h=400&fit=crop') center/cover no-repeat;
             min-height: 320px;
             display: flex;
             align-items: center;
@@ -35,7 +37,7 @@
 
         .filter-btn.active,
         .filter-btn:focus {
-            background: #0d6efd;
+            background: #2563eb;
             color: #fff;
         }
     </style>
@@ -47,7 +49,7 @@
         <div class="container">
             <a class="navbar-brand animate-fadeInLeft" href="/">
                 <i class="fas fa-graduation-cap me-2"></i>
-                EduTech
+                Softech IT Solution
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -81,14 +83,14 @@
     <!-- Hero Section -->
     <section class="gallery-hero text-white text-center">
         <div class="container py-5">
-            <h1 class="display-4 fw-bold">Gallery</h1>
+            <h1 class="display-4 fw-bold">SAP Gallery</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="/" class="text-white-50">Home</a></li>
                     <li class="breadcrumb-item active text-white" aria-current="page">Gallery</li>
                 </ol>
             </nav>
-            <p class="lead mt-3">Explore moments from our events, classes, and student achievements</p>
+            <p class="lead mt-3">Explore images related to SAP training, services, and events</p>
         </div>
     </section>
 
@@ -96,51 +98,51 @@
     <div class="container py-4">
         <div class="text-center mb-4">
             <button class="btn btn-outline-primary filter-btn active mx-1" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="training">Training</button>
+            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="services">Services</button>
             <button class="btn btn-outline-primary filter-btn mx-1" data-filter="events">Events</button>
-            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="classes">Classes</button>
-            <button class="btn btn-outline-primary filter-btn mx-1" data-filter="students">Students</button>
         </div>
         <div class="row g-4" id="galleryGrid">
-            <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="training">
                 <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/01.jpg"
-                        class="gallery-img w-100" alt="Event 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/01.jpg">
+                    <img src="https://images.unsplash.com/photo-1524178232362-b2f1da2a25cd?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Training 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1524178232362-b2f1da2a25cd?w=400&h=250&fit=crop">
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="services">
                 <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/02.jpg"
-                        class="gallery-img w-100" alt="Class 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/02.jpg">
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 gallery-item" data-category="students">
-                <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/03.jpg"
-                        class="gallery-img w-100" alt="Student 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/03.jpg">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Services 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=250&fit=crop">
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
                 <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/04.jpg"
-                        class="gallery-img w-100" alt="Event 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/04.jpg">
+                    <img src="https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Events 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=400&h=250&fit=crop">
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="training">
                 <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/05.jpg"
-                        class="gallery-img w-100" alt="Class 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/05.jpg">
+                    <img src="https://images.unsplash.com/photo-1523580494011-d6073d6d1623?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Training 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1523580494011-d6073d6d1623?w=400&h=250&fit=crop">
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item" data-category="students">
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="services">
                 <div class="card border-0 shadow-sm bg-transparent">
-                    <img src="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/06.jpg"
-                        class="gallery-img w-100" alt="Student 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                        data-img="https://themes.potenzaglobalsolutions.com/html/guruma/images/gallery/06.jpg">
+                    <img src="https://images.unsplash.com/photo-1546237017-bc3a7d146e35?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Services 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1546237017-bc3a7d146e35?w=400&h=250&fit=crop">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                <div class="card border-0 shadow-sm bg-transparent">
+                    <img src="https://images.unsplash.com/photo-1521791165422-cf204932fbf8?w=400&h=250&fit=crop"
+                        class="gallery-img w-100" alt="Events 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-img="https://images.unsplash.com/photo-1521791165422-cf204932fbf8?w=400&h=250&fit=crop">
                 </div>
             </div>
         </div>
@@ -156,10 +158,129 @@
     </div>
 
     <!-- Footer -->
-    <!-- ...existing code... -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row section-padding">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="animate-fadeInUp">
+                        <h3 class="font-playfair mb-4">
+                            <i class="fas fa-graduation-cap me-2 text-secondary-custom"></i>
+                            Softech IT Solution
+                        </h3>
+                        <p class="mb-4">
+                            Empowering minds, shaping futures. We provide world-class education and training
+                            to help you achieve your professional goals and unlock your potential.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-facebook-f fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-twitter fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-linkedin-in fs-5"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fab fa-instagram fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.1s">
+                        <h5 class="mb-4 text-secondary-custom">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="about.html" class="text-decoration-none">About Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="courses.html" class="text-decoration-none">Courses</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="training.html" class="text-decoration-none">Training</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="contact.html" class="text-decoration-none">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.2s">
+                        <h5 class="mb-4 text-secondary-custom">Popular Courses</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=web-development" class="text-decoration-none">Web
+                                    Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="course-detail.html?course=data-science" class="text-decoration-none">Data
+                                    Science</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="digital-marketing" class="text-decoration-none">Digital Marketing</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="mobile-development" class="text-decoration-none">Mobile Development</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="ui-ux-design" class="text-decoration-none">UI/UX
+                                    Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="animate-fadeInUp" style="animation-delay: 0.3s">
+                        <h5 class="mb-4 text-secondary-custom">Contact Info</h5>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt me-3 text-secondary-custom"></i>
+                            <span>Pristine Green , I 407 , Gate No 216/1 (P) Moshi Haveli Pune, Pimpri Chinchwad
+                                Maharashtra 412105</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone me-3 text-secondary-custom"></i>
+                            <span>+91 9974308656</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope me-3 text-secondary-custom"></i>
+                            <span>info@softechit.co.in</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-clock me-3 text-secondary-custom"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: #4a5568;">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-center text-md-start">
+                        © 2024 Softech IT Solution. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none me-3">Terms of Service</a>
+                        <a href="#" class="text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Back to Top Button and scripts -->
-    <!-- ...existing code... -->
     <script src="../assets/js/main.js"></script>
 </body>
 
