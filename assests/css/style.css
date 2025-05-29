@@ -131,6 +131,7 @@ body {
 .hero-section {
     background: linear-gradient(135deg, var(--dark-color) 0%, #334155 100%);
     min-height: 90vh;
+    padding: 100px !important;
     display: flex;
     align-items: center;
     position: relative;
@@ -348,6 +349,8 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .txt {}
+
     .hero-section {
         min-height: 110vh;
         padding: 50px 0;
@@ -424,4 +427,59 @@ body {
 .accordion-body {
     border-radius: 0 0 10px 10px;
     background-color: #f8fafc;
+}
+
+/* Responsive Navbar Styles */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        background: var(--dark-color);
+        border-radius: 0 0 15px 15px;
+        padding: 1rem 0.5rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .navbar-nav .nav-link,
+    .navbar-nav .btn {
+        width: 100%;
+        text-align: left;
+        margin: 0.25rem 0;
+    }
+
+    .navbar-nav .btn {
+        margin-left: 0 !important;
+    }
+
+    .navbar-collapse {
+        background: var(--dark-color);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .navbar-custom {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 0;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .navbar-custom {
+        padding: 0.25rem 0;
+    }
 }
